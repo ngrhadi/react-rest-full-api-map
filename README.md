@@ -1,4 +1,4 @@
-## SETUP AWAL
+## SETUP
 
 run `npm i` on directory */data* for setup backend
 
