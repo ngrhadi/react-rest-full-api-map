@@ -4,7 +4,7 @@ var {
   parse
 } = require('pg-protocol');
 
-var pool = require('../../database/db');
+var pool = require('../../database/db-users');
 
 var queries = require('./query');
 
