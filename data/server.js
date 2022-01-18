@@ -1,5 +1,6 @@
 const express = require('express')
-const usersRoutes = require('./src/routes/routes')
+const usersRoutes = require('./src/routes/userRoutes')
+const pointsRoutes = require('./src/routes/pointsRoutes')
 
 
 const app = express();
@@ -12,6 +13,7 @@ app.get("/", (req, res) => {
 })
 
 app.use('/api/users', usersRoutes);
+app.use('/api/points', pointsRoutes);
 
 
 app.listen(port, () => console.log(`working on ${port}`));

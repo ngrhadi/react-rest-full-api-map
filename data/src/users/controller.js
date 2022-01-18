@@ -1,5 +1,5 @@
 const { parse } = require('pg-protocol');
-const pool = require('../../database/db');
+const pool = require('../../database/db-users');
 const queries = require('./query');
 
 const getUsers = (req, res) => {
