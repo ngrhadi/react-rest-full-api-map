@@ -10,7 +10,7 @@ cd *data/database*
 
 ### Configured Data Table
 
-> must be equal or same like on bellow or need custom but must considering value data atribute as same like digitation team/point collection team
+> must be equal or same like on bellow or if need custom must considering value data atribute as same like digitation team/point collection team
 on *data/src*
 
 ### Running
