@@ -1,4 +1,4 @@
-const Router = require('express-promise-router')
+const Router = require('express')
 const polecontroller = require('../Pole/controller')
 
 const router = new Router()
@@ -11,3 +11,4 @@ router.get('/', polecontroller.getPole)
 
 
 module.exports = router;
+ 

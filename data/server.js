@@ -12,7 +12,7 @@ app.get("/", (req, res) => {
     res.send('main server')
 })
 
-app.use('/api/points', pointsRoutes);
-app.use('/api/poles', poleRoutes);
+app.use('/points', pointsRoutes);
+app.use('/poles', poleRoutes);
 
 app.listen(port, () => console.log(`working on ${port}`));

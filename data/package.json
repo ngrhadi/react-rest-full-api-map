@@ -17,12 +17,5 @@
     "express-promise-router": "^4.1.1",
     "nodemon": "^2.0.15",
     "pg": "^8.7.1"
-  },
-  "devDependencies": {
-    "@babel/cli": "^7.16.8",
-    "@babel/core": "^7.16.7",
-    "@babel/preset-env": "^7.16.8",
-    "@babel/preset-react": "^7.16.7"
-  },
-  "browserslist": "> 0.25%, not dead"
+  }
 }

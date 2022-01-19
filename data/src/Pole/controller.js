@@ -2,13 +2,13 @@ const { parse } = require('pg-protocol');
 const pool = require('../../database/db-points');
 const queries = require('./query');
 
-const getPole = (req, res) => {
+const getPole = async (req, res) => {
     pool.query(queries.getPole, (error, results) => {
         if (error) throw error;
         res.status(200).json(results.rows);
-    })
+    }) 
 }
-
+ 
 // // const getPoleById = (req, res) => {
 // //     const id = parseInt(req.params.id);
 // //     pool.query(queries.getPoleById, [id], (error, results) => {
