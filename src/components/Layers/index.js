@@ -1,12 +1,12 @@
 import React from 'react';
-import UserApi from '../../api/users/api';
+import PoleApi from '../../api/pole/api';
 import PointApi from '../../api/point/api';
 
 const Layers = ({ children }) => {
     return (
         <div>
             Layer Here
-            <UserApi />
+            <PoleApi />
             <PointApi/>
         </div>
     );

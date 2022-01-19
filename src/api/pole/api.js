@@ -1,7 +1,7 @@
 import useFetch from "./useFetch";
 
-const UserApi = () => {
-  const [data] = useFetch("/users");
+const PoleApi = () => {
+  const [data] = useFetch("/poles");
 
   return (
     <>
@@ -9,7 +9,7 @@ const UserApi = () => {
         data.map((item) => {
           // // return (
           // //     <div>
-                  <p key={item.id}>{item.name}</p>
+                  <p key={item.id}>{item.device_id}</p>
           // //         <p key={item.id}>{item.email}</p>
           // //     </div>
           // // )
@@ -18,4 +18,4 @@ const UserApi = () => {
   );
 };
 
-export default UserApi;
+export default PoleApi;
