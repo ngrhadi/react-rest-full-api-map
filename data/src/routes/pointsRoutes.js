@@ -1,7 +1,7 @@
-const { Router } = require('express')
+const Router = require('express-promise-router')
 const pointcontroller = require('../points/controller')
 
-const router = Router();
+const router = new Router();
 
 router.get('/', pointcontroller.getPoint);
 router.post('/', pointcontroller.addPoint);

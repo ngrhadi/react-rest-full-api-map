@@ -1,12 +1,10 @@
 "use strict";
 
-var {
-  Router
-} = require('express');
+var Router = require('express-promise-router');
 
 var pointcontroller = require('../points/controller');
 
-var router = Router();
+var router = new Router();
 router.get('/', pointcontroller.getPoint);
 router.post('/', pointcontroller.addPoint);
 router.get('/:id', pointcontroller.getPointById);

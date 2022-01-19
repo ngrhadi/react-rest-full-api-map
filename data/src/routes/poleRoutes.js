@@ -1,9 +1,9 @@
-const { Router } = require('express')
+const Router = require('express-promise-router')
 const polecontroller = require('../Pole/controller')
 
-const router = Router();
+const router = new Router()
 
-router.get('/', polecontroller.getPole);
+router.get('/', polecontroller.getPole)
 // // router.post('/', polecontroller.getPoleById);
 // // router.get('/:id', usercontroller.getUsersById);
 // // router.put('/:id', usercontroller.updateUsersId);
