@@ -1,12 +1,9 @@
-import React from 'react';
+import Layers from "./Layers";
+import VectorLayer from "./VectorLayer";
+import TileLayer from "./TileLayer";
 
-const Layers = ({ children }) => {
-    return (
-        <div>
-            Layer Here
-
-        </div>
-    );
+export {
+	Layers,
+	VectorLayer,
+	TileLayer
 }
-
-export default Layers;
